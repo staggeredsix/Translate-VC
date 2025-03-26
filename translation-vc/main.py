@@ -11,11 +11,11 @@ import logging
 # Add the parent directory to the path so we can import the package
 sys.path.insert(0, os.path.abspath(os.path.dirname(__file__)))
 
-from multilingual_voice_chat.utils.logging_utils import setup_logging
-from multilingual_voice_chat.utils.gpu_utils import detect_gpu, optimize_cuda
-from multilingual_voice_chat.services import initialize_services
-from multilingual_voice_chat.ui import VoiceChatUI
-from multilingual_voice_chat import config
+from utils.logging_utils import setup_logging
+from utils.gpu_utils import detect_gpu, optimize_cuda
+from utils.logging_utils import initialize_services
+from ui.app import VoiceChatUI
+from config import config
 
 def parse_arguments():
     """Parse command line arguments"""
