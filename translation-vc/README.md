@@ -138,7 +138,7 @@ You can change the models used for each service:
 
 ## License
 
-[License details here]
+Probably explosive in early versions, testing is underway. This is currently unlicenced and in testing/dent removal. Use and watch fail at your own risk.
 
 ## Acknowledgements
 
