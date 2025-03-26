@@ -32,6 +32,10 @@ def parse_arguments():
                         help="Disable translation verification")
     parser.add_argument("--enable-mic", action="store_true", 
                         help="Enable microphone by default")
+    parser.add_argument("--host", type=str, default="127.0.0.1", 
+                        help="Host to run the app on")
+    parser.add_argument("--debug", action="store_true", help="Enable debug logging")
+    parser.add_argument("--log-file", action="store_true", help="Log to file")
     
     return parser.parse_args()
 
