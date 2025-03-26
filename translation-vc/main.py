@@ -2,7 +2,6 @@
 """
 Main entry point for the multilingual voice chat application.
 """
-
 import os
 import sys
 import argparse
@@ -23,6 +22,8 @@ def parse_arguments():
     
     parser.add_argument("--share", action="store_true", help="Share the app publicly")
     parser.add_argument("--port", type=int, default=7860, help="Port to run the app on")
+    parser.add_argument("--host", type=str, default="127.0.0.1", 
+                        help="Host to run the app on")
     parser.add_argument("--debug", action="store_true", help="Enable debug logging")
     parser.add_argument("--log-file", action="store_true", help="Log to file")
     parser.add_argument("--whisper-model", type=str, default=None, 
@@ -32,10 +33,6 @@ def parse_arguments():
                         help="Disable translation verification")
     parser.add_argument("--enable-mic", action="store_true", 
                         help="Enable microphone by default")
-    parser.add_argument("--host", type=str, default="127.0.0.1", 
-                        help="Host to run the app on")
-    parser.add_argument("--debug", action="store_true", help="Enable debug logging")
-    parser.add_argument("--log-file", action="store_true", help="Log to file")
     
     return parser.parse_args()
 
@@ -75,7 +72,8 @@ def main():
     ui = VoiceChatUI()
     ui.launch(
         share=args.share,
-        server_port=args.port
+        server_port=args.port,
+        server_name=args.host
     )
 
 if __name__ == "__main__":
