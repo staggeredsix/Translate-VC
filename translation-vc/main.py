@@ -11,7 +11,7 @@ import logging
 # Add the parent directory to the path so we can import the package
 sys.path.insert(0, os.path.abspath(os.path.dirname(__file__)))
 
-from .utils.logging_utils import setup_logging
+from utils.logging_utils import setup_logging
 from .utils.gpu_utils import detect_gpu, optimize_cuda
 from .services import initialize_services
 from .ui.app import VoiceChatUI
