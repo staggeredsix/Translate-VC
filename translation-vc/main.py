@@ -12,9 +12,9 @@ import logging
 sys.path.insert(0, os.path.abspath(os.path.dirname(__file__)))
 
 from utils.logging_utils import setup_logging
-from .utils.gpu_utils import detect_gpu, optimize_cuda
-from .services import initialize_services
-from .ui.app import VoiceChatUI
+from utils.gpu_utils import detect_gpu, optimize_cuda
+from services import initialize_services
+from ui.app import VoiceChatUI
 import config
 
 def parse_arguments():
