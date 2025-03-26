@@ -11,7 +11,7 @@ import threading
 import time
 from typing import Dict, Any, Optional
 
-from .. import config
+import config
 
 logger = logging.getLogger(__name__)
 

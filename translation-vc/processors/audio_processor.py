@@ -12,11 +12,11 @@ import torch
 import sounddevice as sd
 from typing import Callable, List, Optional
 
-from .. import config
-from ..utils.audio_utils import normalize_audio, concatenate_audio_chunks, adaptive_vad_threshold
-from ..utils.logging_utils import PerformanceLogger
-from ..services.whisper_service import get_whisper_service
-from ..services.broadcaster_service import get_broadcaster_service
+import config
+from utils.audio_utils import normalize_audio, concatenate_audio_chunks, adaptive_vad_threshold
+from utils.logging_utils import PerformanceLogger
+from services.whisper_service import get_whisper_service
+from services.broadcaster_service import get_broadcaster_service
 
 logger = logging.getLogger(__name__)
 perf_logger = PerformanceLogger("audio_processor")

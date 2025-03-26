@@ -10,8 +10,8 @@ from transformers import pipeline
 from sacrebleu.metrics import BLEU
 import nltk
 
-from .. import config
-from ..utils.logging_utils import PerformanceLogger
+import config
+from utils.logging_utils import PerformanceLogger
 
 logger = logging.getLogger(__name__)
 perf_logger = PerformanceLogger("verification")

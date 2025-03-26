@@ -8,7 +8,7 @@ import soundfile as sf
 import tempfile
 import os
 import logging
-from .. import config
+import config
 
 logger = logging.getLogger(__name__)
 

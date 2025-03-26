@@ -6,14 +6,14 @@ import gradio as gr
 import logging
 import torch
 
-from .. import config
-from ..utils.gpu_utils import gpu_memory_stats
-from ..services.user_profile_service import get_user_profile_service
-from ..services.whisper_service import get_whisper_service
-from ..services.translation_service import get_translation_service
-from ..services.tts_service import get_tts_service
-from ..services.verification_service import get_verification_service
-from ..processors.audio_processor import AudioStreamProcessor
+import config
+from utils.gpu_utils import gpu_memory_stats
+from services.user_profile_service import get_user_profile_service
+from services.whisper_service import get_whisper_service
+from services.translation_service import get_translation_service
+from services.tts_service import get_tts_service
+from services.verification_service import get_verification_service
+from processors.audio_processor import AudioStreamProcessor
 
 logger = logging.getLogger(__name__)
 

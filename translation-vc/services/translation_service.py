@@ -10,8 +10,8 @@ from functools import lru_cache
 from transformers import MarianMTModel, MarianTokenizer
 import time
 
-from .. import config
-from ..utils.logging_utils import PerformanceLogger
+import config
+from utils.logging_utils import PerformanceLogger
 
 logger = logging.getLogger(__name__)
 perf_logger = PerformanceLogger("translation")

@@ -8,11 +8,11 @@ import logging
 import threading
 from typing import Dict, Any, Callable
 
-from .. import config
-from ..utils.logging_utils import PerformanceLogger
-from .translation_service import get_translation_service
-from .tts_service import get_tts_service
-from .user_profile_service import get_user_profile_service
+import config
+from utils.logging_utils import PerformanceLogger
+from translation_service import get_translation_service
+from tts_service import get_tts_service
+from user_profile_service import get_user_profile_service
 
 logger = logging.getLogger(__name__)
 perf_logger = PerformanceLogger("broadcaster")

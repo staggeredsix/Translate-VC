@@ -10,9 +10,9 @@ import numpy as np
 from faster_whisper import WhisperModel
 from functools import lru_cache
 
-from .. import config
-from ..utils.audio_utils import save_audio_to_temp, normalize_audio, clean_temp_file
-from ..utils.logging_utils import PerformanceLogger
+import config
+from utils.audio_utils import save_audio_to_temp, normalize_audio, clean_temp_file
+from utils.logging_utils import PerformanceLogger
 
 logger = logging.getLogger(__name__)
 perf_logger = PerformanceLogger("whisper")

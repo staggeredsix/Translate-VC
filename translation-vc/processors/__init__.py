@@ -2,4 +2,4 @@
 Processors package initialization.
 """
 
-from .audio_processor import AudioStreamProcessor
+from audio_processor import AudioStreamProcessor

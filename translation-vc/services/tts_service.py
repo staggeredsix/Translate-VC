@@ -11,9 +11,9 @@ import soundfile as sf
 import numpy as np
 from TTS.api import TTS
 
-from .. import config
-from ..utils.audio_utils import normalize_audio, clean_temp_file
-from ..utils.logging_utils import PerformanceLogger
+import config
+from utils.audio_utils import normalize_audio, clean_temp_file
+from utils.logging_utils import PerformanceLogger
 
 logger = logging.getLogger(__name__)
 perf_logger = PerformanceLogger("tts")
